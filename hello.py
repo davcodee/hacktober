@@ -5,8 +5,7 @@ def suma(x,y):
 
 def resta(x,y):
   """Esta funcion hace una resta"""
-   res=x-y
-   return res
+  return x-y
 
 
 def division(x,y):
@@ -25,6 +24,14 @@ def modulo(x,y):
 def potencia(x,n):
 	return x ** n
 
+def factorial(n):
+	if n == 1:
+		return n
+
+	else: 
+		return  n * factorial(n-1)
+
 print(potencia(5,2))
 if __name__ == "__main__":
     print(division(10,5))
+    print(factorial(5))
